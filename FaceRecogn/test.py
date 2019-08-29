@@ -40,6 +40,11 @@ abd_face_encoding = face_recognition.face_encodings(abd_image)[0]
 dimash_image = face_recognition.load_image_file("Dimash.jpeg")
 dimash_face_encoding = face_recognition.face_encodings(dimash_image)[0]
 
+seth_image = face_recognition.load_image_file("seth.jpeg")
+seth_face_encoding = face_recognition.face_encodings(seth_image)[0]
+
+amon_image = face_recognition.load_image_file("Amon.jpeg")
+amon_face_encoding = face_recognition.face_encodings(amon_image)[0]
 
 # Create arrays of known face encodings and their names
 known_face_encodings = [
@@ -49,7 +54,9 @@ known_face_encodings = [
     besnik_face_encoding,
     # hafiz_face_encoding,
     abd_face_encoding,
-    dimash_face_encoding
+    dimash_face_encoding,
+    seth_face_encoding,
+    amon_face_encoding
 
 ]
 known_face_names = [
@@ -59,7 +66,9 @@ known_face_names = [
     "Besnik Ajdini",
     # "Hafiz",
     "Abdoulkarim Bonjour",
-    "Dinmukhammed"
+    "Dinmukhammed",
+    "Sethumer Devletov",
+    "Amon Tarmo"
 ]
 
 # Initialize some variables
